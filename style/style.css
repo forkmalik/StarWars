@@ -12,7 +12,7 @@ font-family: 'font317d5480a545edf076e02aacd21f434f';
    box-sizing: border-box; 
 }
 body{
-    background: #070506 url(../img/main-bg.png) top right 90% no-repeat;
+    background: #070506 url(../img/main-bg.jpg) top right 90% no-repeat;
     background-size: cover; 
     background-attachment: fixed;
     color: white;
@@ -111,6 +111,7 @@ body{
     line-height: 150%;
     margin-bottom: 24px;
 }
+
 .slider{
     display: flex;
     flex-wrap: wrap;
@@ -149,4 +150,64 @@ body{
     left: 0;
     top: 0;
     z-index: -2;
+}
+.slider__rating-label{
+    margin-right: 10px;
+}
+.star{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/Star.svg")no-repeat center;
+}
+.star-o{
+    background: url("../img/star-o.svg")no-repeat center;
+}
+
+.slider__nav--left{
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent url('../img/arrow-left.svg')no-repeat center;
+    margin-right: 15px;
+    cursor: pointer;
+    
+}
+.slider__nav--right{
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent url('../img/arrow-right.svg')no-repeat center;
+    cursor: pointer;
+    
+}
+.slider__nav--left span, .slider__nav--right span{
+    display: none;
+}
+
+@media(max-width: 600px){
+    .hero__subtitle{
+        font-size: 24px;
+    }
+    .hero__title{
+        font-size: 36px;
+        line-height: 120%;
+    }
+    .hero__description{
+        font-size: 16px;
+    }
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header__logo{
+        margin-bottom: 30px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__link{
+        margin-bottom: 10px;
+    }
 }
